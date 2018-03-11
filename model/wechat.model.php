@@ -67,6 +67,10 @@ class Wechat
                     case "COMPANY":
                         $content = "ireader提供相关产品与服务。";
                         break;
+                    case "V1001_LEVEL_1":
+                        //神指一戳
+                        $content = Kqiwen::randomGetOne();
+                        break;
                     default:
                         $content = "点击菜单：" . $object->EventKey;
                         break;
@@ -79,7 +83,15 @@ class Wechat
                 $content = "receive a new event: " . $object->Event;
                 break;
         }
-        $result = self::transmitText($object, $content);
+        if (is_array($content)) {
+            if (isset($content[0]['PicUrl'])) {
+                $result = self::transmitNews($object, $content);
+            } else if (isset($content['MusicUrl'])) {
+                $result = self::transmitMusic($object, $content);
+            }
+        } else {
+            $result = self::transmitText($object, $content);
+        }
         return $result;
     }
 
