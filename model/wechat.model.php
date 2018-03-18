@@ -62,6 +62,16 @@ class Wechat
             case "SCAN":
                 $content = "扫描场景 " . $object->EventKey;
                 break;
+            case "VIEW":
+                switch($object->EventKey){
+                    case "111":
+                        break;
+                    case "222":
+                        break;
+                    default:
+                        break;
+                }
+                break;
             case "CLICK":
                 switch ($object->EventKey) {
                     case "COMPANY":
