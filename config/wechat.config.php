@@ -8,11 +8,11 @@
  */
 return [
     'test' => [
-        'appid' => 'wxb6ab2f5bd8950729',
-        'appsecret' => '6ad13d6b5429253173755e73db55e7c0'
+        'appid' => '',
+        'appsecret' => ''
     ],
     'pro'  =>[
-        'appid' => 'wxb6ab2f5bd8950729',
-        'appsecret' => '6ad13d6b5429253173755e73db55e7c0'
+        'appid' => '',
+        'appsecret' => ''
     ]
 ];

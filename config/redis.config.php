@@ -9,13 +9,13 @@
 return [
     'master' => array(
         array('host'=>'cnuzawddahhs.redis.sae.sina.com.cn',
-            'auth'=>'53azdB8v67BdpgFxG9tth58c45Uwktq494lBcbtfaHkvIpcLNhpM66t3FjAT9mmL',
+            'auth'=>'',
             'port'=>'10410'
         )
     ),
     'slave' => array(
         array('host'=>'cnuzawddahhs.redis.sae.sina.com.cn',
-            'auth'=>'53azdB8v67BdpgFxG9tth58c45Uwktq494lBcbtfaHkvIpcLNhpM66t3FjAT9mmL',
+            'auth'=>'',
             'port'=>'10410'
         )
     )
